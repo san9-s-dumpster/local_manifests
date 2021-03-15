@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="san9"
+           revision="android_11"
+           fetch="https://github.com/san9-s-dumpster/" />
+
+<!-- Device removals -->
+<remove-project name="android_device_qcom_sepolicy" />
+<remove-project name="android_device_qcom_sepolicy_vndr"/>
+
+<!-- Device additions -->
+<project name="android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="san9" />
+<project name="android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="san9" />
+
+<!-- Hardware removals -->
+<remove-project name="android_hardware_qcom_audio" />
+<remove-project name="android_hardware_qcom_display" />
+<remove-project name="android_hardware_qcom_media" />
+<remove-project name="android_hardware_qcom-caf_thermal" />
+<remove-project name="android_hardware_qcom_wlan"/>
+
+<!-- Common HAL additions -->
+<project name="android_hardware_qcom-caf-thermal" path="hardware/qcom-caf/thermal" remote="san9" />
+<project name="android_hardware_qcom_wlan" path="hardware/qcom-caf/wlan" remote="san9" revision="android_11-caf" />
+
+<!-- SM8150 HALs -->
+<project name="android_hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="san9" revision="android_11-caf-sm8150" />
+<project name="android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display" remote="san9" revision="android_11-caf-sm8150" />
+<project name="android_hardware_qcom_media" path="hardware/qcom-caf/sm8150/media" remote="san9" revision="android_11-caf-sm8150" />
+
+<!-- MSM8996 HALs -->
+<project name="android_hardware_qcom_audio" path="hardware/qcom-caf/msm8996/audio" remote="los" revision="lineage-18.1-caf-msm8996" />
+<project name="android_hardware_qcom_display" path="hardware/qcom-caf/msm8996/display" remote="los" revision="lineage-18.1-caf-msm8996" />
+<project name="android_hardware_qcom_media" path="hardware/qcom-caf/msm8996/media" remote="los" revision="lineage-18.1-caf-msm8996" />
+
+<!-- Proprietary removals -->
+<remove-project name="android_vendor_qcom_opensource_audio"/>
+<remove-project name="android_vendor_qcom_opensource_display-commonsys-intf"/>
+<remove-project name="android_vendor_qcom_opensource_power"/>
+
+<!-- Proprietary additions -->
+<project name="android_vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="san9" />
+<project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="san9" />
+<project name="android_vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="san9" />
+
+</manifest>

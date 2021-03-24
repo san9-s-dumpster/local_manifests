@@ -16,14 +16,14 @@
 <project name="android_device_xiaomi_raphael" path="device/xiaomi/raphael" remote="san9" />
 <project name="android_device_xiaomi_raphael-sepolicy" path="device/xiaomi/raphael-sepolicy" remote="san9" />
 <project name="vendor_xiaomi_raphael" path="vendor/xiaomi/raphael" remote="san9" clone-depth="1" />
-<project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="san9" clone-depth="1" />
+<project name="kernel_xiaomi_raphael" path="kernel/xiaomi/raphael" remote="san9" />
 
-<!-- xiaomi_vince -->
+<!-- xiaomi_vince
 <project name="android_device_xiaomi_msm8953-common" path="device/xiaomi/msm8953-common" remote="san9" />
 <project name="android_device_xiaomi_vince" path="device/xiaomi/vince" remote="san9" />
 <project name="vendor_xiaomi_msm8953-common" path="vendor/xiaomi/msm8953-common" remote="san9" clone-depth="1" />
 <project name="vendor_xiaomi_vince" path="vendor/xiaomi/vince" remote="san9" clone-depth="1" />
-<project name="kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="san9" clone-depth="1" />
+<project name="kernel_xiaomi_msm8953" path="kernel/xiaomi/msm8953" remote="san9" clone-depth="1" /> -->
 
 <!-- Hardware removals -->
 <remove-project name="android_hardware_qcom_audio" />

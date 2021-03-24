@@ -56,4 +56,7 @@
 <project name="android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" remote="san9" />
 <project name="android_vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="san9" />
 
+	<!-- Proton clang -->
+<project name="kdrag0n/proton-clang" path="prebuilts/clang/host/linux-x86/clang-proton" remote="github" clone-depth="1" />
+
 </manifest>
